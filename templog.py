@@ -21,7 +21,7 @@ def dataline():
     p1=epics.caget('pirani:PRESSURE')
     p2=epics.caget('CC1:PRESSURE')
     file = open(date_time_file, "a")
-    strline = now_time + "\t" + str(t1)+"\t"+str(t2)+"\t"+str(t3)+"\t"+str(t4)+"\t"str(p1)+"\t"+str(p2)+"\n"
+    strline = now_time + "\t" + str(t1)+"\t"+str(t2)+"\t"+str(t3)+"\t"+str(t4)+"\t"+str(p1)+"\t"+str(p2)+"\n"
     file.write(strline)
     file.close()
 #    print(t1,t2,t3)
