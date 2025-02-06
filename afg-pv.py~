@@ -1,0 +1,2 @@
+import epics
+p = epics.PV('AFG3052C:DATA')
